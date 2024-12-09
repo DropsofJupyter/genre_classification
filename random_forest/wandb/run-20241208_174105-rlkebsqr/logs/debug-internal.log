@@ -1,0 +1,243 @@
+2024-12-08 17:41:05,717 INFO    StreamThr :413989 [internal.py:wandb_internal():86] W&B internal server running at pid: 413989, started at: 2024-12-08 17:41:05.717543
+2024-12-08 17:41:05,718 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: status
+2024-12-08 17:41:05,719 INFO    WriterThread:413989 [datastore.py:open_for_write():87] open: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/run-rlkebsqr.wandb
+2024-12-08 17:41:05,720 DEBUG   SenderThread:413989 [sender.py:send():378] send: header
+2024-12-08 17:41:05,721 DEBUG   SenderThread:413989 [sender.py:send():378] send: run
+2024-12-08 17:41:06,171 INFO    SenderThread:413989 [dir_watcher.py:__init__():211] watching files in: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files
+2024-12-08 17:41:06,171 INFO    SenderThread:413989 [sender.py:_start_run_threads():1099] run started: rlkebsqr with start time 1733708465.717311
+2024-12-08 17:41:06,180 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: check_version
+2024-12-08 17:41:06,180 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: check_version
+2024-12-08 17:41:06,387 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: run_start
+2024-12-08 17:41:06,389 DEBUG   HandlerThread:413989 [system_info.py:__init__():26] System info init
+2024-12-08 17:41:06,389 DEBUG   HandlerThread:413989 [system_info.py:__init__():41] System info init done
+2024-12-08 17:41:06,389 INFO    HandlerThread:413989 [system_monitor.py:start():194] Starting system monitor
+2024-12-08 17:41:06,389 INFO    SystemMonitor:413989 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-12-08 17:41:06,390 INFO    SystemMonitor:413989 [interfaces.py:start():190] Started cpu monitoring
+2024-12-08 17:41:06,391 INFO    HandlerThread:413989 [system_monitor.py:probe():214] Collecting system info
+2024-12-08 17:41:06,392 INFO    SystemMonitor:413989 [interfaces.py:start():190] Started disk monitoring
+2024-12-08 17:41:06,393 INFO    SystemMonitor:413989 [interfaces.py:start():190] Started memory monitoring
+2024-12-08 17:41:06,394 INFO    SystemMonitor:413989 [interfaces.py:start():190] Started network monitoring
+2024-12-08 17:41:06,399 DEBUG   HandlerThread:413989 [system_info.py:probe():150] Probing system
+2024-12-08 17:41:06,400 DEBUG   HandlerThread:413989 [system_info.py:_probe_git():135] Probing git
+2024-12-08 17:41:06,404 DEBUG   HandlerThread:413989 [system_info.py:_probe_git():143] Probing git done
+2024-12-08 17:41:06,404 DEBUG   HandlerThread:413989 [system_info.py:probe():198] Probing system done
+2024-12-08 17:41:06,404 DEBUG   HandlerThread:413989 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-49-generic-x86_64-with-glibc2.35', 'python': '3.10.16', 'heartbeatAt': '2024-12-09T01:41:06.399826', 'startedAt': '2024-12-09T01:41:05.714038', 'docker': None, 'cuda': None, 'args': ('--train_data', 'data_train.csv:latest', '--model_config', '/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/outputs/2024-12-08/17-39-28/random_forest_config.yml', '--export_artifact', 'model_export', '--random_seed', '42', '--val_size', '0.3', '--stratify', 'genre'), 'state': 'running', 'program': '/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/run.py', 'codePathLocal': 'run.py', 'codePath': 'lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/run.py', 'git': {'remote': 'git@github.com:udacity/nd0821-c2-build-model-workflow-exercises.git', 'commit': '0d72086a9301bf656d4656f49cc342b126b71048'}, 'email': 'jqtomorrow@Gmail.com', 'root': '/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises', 'host': 'jesse', 'username': 'jesse', 'executable': '/home/jesse/anaconda3/envs/mlflow-0e5e99aeffae40732585fbd4b1effb2f05be914e/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 875.0655, 'min': 400.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 1405.774, 'min': 400.0, 'max': 4700.0}, {'current': 3300.098, 'min': 400.0, 'max': 4700.0}, {'current': 442.594, 'min': 400.0, 'max': 4700.0}, {'current': 518.69, 'min': 400.0, 'max': 4700.0}, {'current': 730.111, 'min': 400.0, 'max': 4700.0}, {'current': 1802.919, 'min': 400.0, 'max': 4700.0}, {'current': 400.0, 'min': 400.0, 'max': 4700.0}, {'current': 1052.171, 'min': 400.0, 'max': 4700.0}], 'disk': {'/': {'total': 233.17998886108398, 'used': 82.67679977416992}}, 'memory': {'total': 15.348331451416016}}
+2024-12-08 17:41:06,404 INFO    HandlerThread:413989 [system_monitor.py:probe():224] Finished collecting system info
+2024-12-08 17:41:06,404 INFO    HandlerThread:413989 [system_monitor.py:probe():227] Publishing system info
+2024-12-08 17:41:06,404 DEBUG   HandlerThread:413989 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-12-08 17:41:07,173 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/conda-environment.yaml
+2024-12-08 17:41:07,714 DEBUG   HandlerThread:413989 [system_info.py:_save_conda():219] Saving conda packages done
+2024-12-08 17:41:07,714 DEBUG   HandlerThread:413989 [system_info.py:_save_code():44] Saving code
+2024-12-08 17:41:07,716 DEBUG   HandlerThread:413989 [system_info.py:_save_code():65] Saving code done
+2024-12-08 17:41:07,716 DEBUG   HandlerThread:413989 [system_info.py:_save_patches():82] Saving git patches
+2024-12-08 17:41:07,725 DEBUG   HandlerThread:413989 [system_info.py:_save_patches():124] Saving git patches done
+2024-12-08 17:41:07,726 INFO    HandlerThread:413989 [system_monitor.py:probe():229] Finished publishing system info
+2024-12-08 17:41:07,727 DEBUG   SenderThread:413989 [sender.py:send():378] send: files
+2024-12-08 17:41:07,727 INFO    SenderThread:413989 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-12-08 17:41:07,727 INFO    SenderThread:413989 [sender.py:_save_file():1365] saving file code/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/run.py with policy now
+2024-12-08 17:41:07,727 INFO    SenderThread:413989 [sender.py:_save_file():1365] saving file diff.patch with policy now
+2024-12-08 17:41:07,865 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: python_packages
+2024-12-08 17:41:07,865 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: python_packages
+2024-12-08 17:41:07,865 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-08 17:41:07,866 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: stop_status
+2024-12-08 17:41:07,867 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-08 17:41:08,085 DEBUG   SenderThread:413989 [sender.py:send():378] send: telemetry
+2024-12-08 17:41:08,118 INFO    wandb-upload_0:413989 [upload_job.py:push():131] Uploaded file /tmp/tmpx8yhpa6mwandb/spwgo1zc-wandb-metadata.json
+2024-12-08 17:41:08,172 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/conda-environment.yaml
+2024-12-08 17:41:08,172 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/requirements.txt
+2024-12-08 17:41:08,173 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/output.log
+2024-12-08 17:41:08,173 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/code/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/run.py
+2024-12-08 17:41:08,173 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/wandb-metadata.json
+2024-12-08 17:41:08,173 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/diff.patch
+2024-12-08 17:41:08,174 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/code/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest
+2024-12-08 17:41:08,174 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/code
+2024-12-08 17:41:08,174 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/code/lesson-5-final-pipeline-release-and-deploy
+2024-12-08 17:41:08,174 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/code/lesson-5-final-pipeline-release-and-deploy/exercises
+2024-12-08 17:41:08,174 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/code/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14
+2024-12-08 17:41:08,174 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/code/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution
+2024-12-08 17:41:08,283 INFO    wandb-upload_2:413989 [upload_job.py:push():131] Uploaded file /tmp/tmpx8yhpa6mwandb/yl51796s-diff.patch
+2024-12-08 17:41:08,286 INFO    wandb-upload_1:413989 [upload_job.py:push():131] Uploaded file /tmp/tmpx8yhpa6mwandb/xhdjmrme-code/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/run.py
+2024-12-08 17:41:08,539 DEBUG   SenderThread:413989 [sender.py:send():378] send: use_artifact
+2024-12-08 17:41:08,805 DEBUG   SenderThread:413989 [sender.py:send():378] send: config
+2024-12-08 17:41:10,173 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/output.log
+2024-12-08 17:41:10,805 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: status_report
+2024-12-08 17:41:15,806 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: status_report
+2024-12-08 17:41:17,754 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: summary_record
+2024-12-08 17:41:17,754 INFO    SenderThread:413989 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-12-08 17:41:18,176 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/wandb-summary.json
+2024-12-08 17:41:19,365 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: log_artifact
+2024-12-08 17:41:19,365 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: log_artifact
+2024-12-08 17:41:20,040 INFO    wandb-upload_0:413989 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmpguvrkkc9
+2024-12-08 17:41:20,042 INFO    wandb-upload_2:413989 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmpyhylnbbs
+2024-12-08 17:41:20,057 INFO    wandb-upload_5:413989 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmpf7db6ihz
+2024-12-08 17:41:20,082 INFO    wandb-upload_4:413989 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmphhzg1d1m
+2024-12-08 17:41:20,145 INFO    wandb-upload_3:413989 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmpadr8cbx3
+2024-12-08 17:41:20,177 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/output.log
+2024-12-08 17:41:22,052 INFO    wandb-upload_1:413989 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmpl7rolpql
+2024-12-08 17:41:22,543 INFO    SenderThread:413989 [sender.py:send_request_log_artifact():1431] logged artifact model_export - {'id': 'QXJ0aWZhY3Q6MTM2NDIwMjE0Mw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUwMjA0Mzg2OQ==', 'latestArtifact': None}}
+2024-12-08 17:41:22,544 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: status_report
+2024-12-08 17:41:22,867 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-08 17:41:22,868 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-08 17:41:22,869 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: stop_status
+2024-12-08 17:41:23,841 DEBUG   SenderThread:413989 [sender.py:send():378] send: files
+2024-12-08 17:41:23,841 INFO    SenderThread:413989 [sender.py:_save_file():1365] saving file media/images/feature_importance_0_103d5d9384e948d453c7.png with policy now
+2024-12-08 17:41:23,881 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-08 17:41:23,884 DEBUG   SenderThread:413989 [sender.py:send():378] send: files
+2024-12-08 17:41:23,884 INFO    SenderThread:413989 [sender.py:_save_file():1365] saving file media/images/confusion_matrix_0_137f8499ea663781a02a.png with policy now
+2024-12-08 17:41:23,885 DEBUG   SenderThread:413989 [sender.py:send():378] send: history
+2024-12-08 17:41:23,886 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: summary_record
+2024-12-08 17:41:23,888 INFO    SenderThread:413989 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-12-08 17:41:23,889 DEBUG   SenderThread:413989 [sender.py:send():378] send: exit
+2024-12-08 17:41:23,889 INFO    SenderThread:413989 [sender.py:send_exit():585] handling exit code: 0
+2024-12-08 17:41:23,889 INFO    SenderThread:413989 [sender.py:send_exit():587] handling runtime: 17
+2024-12-08 17:41:23,898 INFO    SenderThread:413989 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-12-08 17:41:23,899 INFO    SenderThread:413989 [sender.py:send_exit():593] send defer
+2024-12-08 17:41:23,899 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:23,899 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 0
+2024-12-08 17:41:23,900 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:23,900 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-12-08 17:41:23,900 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 1
+2024-12-08 17:41:23,901 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:23,901 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 1
+2024-12-08 17:41:23,901 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:23,901 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-12-08 17:41:23,901 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 2
+2024-12-08 17:41:23,902 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:23,902 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 2
+2024-12-08 17:41:23,902 INFO    HandlerThread:413989 [system_monitor.py:finish():203] Stopping system monitor
+2024-12-08 17:41:23,902 DEBUG   SystemMonitor:413989 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-12-08 17:41:23,902 DEBUG   SystemMonitor:413989 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-12-08 17:41:23,902 DEBUG   SystemMonitor:413989 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-12-08 17:41:23,903 INFO    HandlerThread:413989 [interfaces.py:finish():202] Joined cpu monitor
+2024-12-08 17:41:23,903 INFO    HandlerThread:413989 [interfaces.py:finish():202] Joined disk monitor
+2024-12-08 17:41:23,903 INFO    HandlerThread:413989 [interfaces.py:finish():202] Joined memory monitor
+2024-12-08 17:41:23,904 INFO    HandlerThread:413989 [interfaces.py:finish():202] Joined network monitor
+2024-12-08 17:41:23,904 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:23,904 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-12-08 17:41:23,904 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 3
+2024-12-08 17:41:23,905 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:23,905 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 3
+2024-12-08 17:41:23,905 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:23,905 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-12-08 17:41:23,905 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 4
+2024-12-08 17:41:23,906 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:23,906 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 4
+2024-12-08 17:41:23,906 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:23,906 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-12-08 17:41:23,906 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 5
+2024-12-08 17:41:23,907 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:23,907 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 5
+2024-12-08 17:41:23,907 DEBUG   SenderThread:413989 [sender.py:send():378] send: summary
+2024-12-08 17:41:23,908 INFO    SenderThread:413989 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-12-08 17:41:23,908 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:23,908 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-12-08 17:41:23,909 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 6
+2024-12-08 17:41:23,909 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:23,909 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 6
+2024-12-08 17:41:23,909 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:23,909 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-12-08 17:41:23,915 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: status_report
+2024-12-08 17:41:24,089 INFO    wandb-upload_0:413989 [upload_job.py:push():131] Uploaded file /tmp/tmpx8yhpa6mwandb/k7f3ugh0-media/images/feature_importance_0_103d5d9384e948d453c7.png
+2024-12-08 17:41:24,104 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 7
+2024-12-08 17:41:24,105 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:24,105 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 7
+2024-12-08 17:41:24,106 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:24,106 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-12-08 17:41:24,113 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 8
+2024-12-08 17:41:24,113 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:24,113 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 8
+2024-12-08 17:41:24,114 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:24,114 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-12-08 17:41:24,114 INFO    SenderThread:413989 [job_builder.py:build():298] Attempting to build job artifact
+2024-12-08 17:41:24,115 INFO    SenderThread:413989 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-12-08 17:41:24,119 INFO    SenderThread:413989 [job_builder.py:build():404] adding wandb-job metadata file
+2024-12-08 17:41:24,124 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 9
+2024-12-08 17:41:24,125 DEBUG   SenderThread:413989 [sender.py:send():378] send: artifact
+2024-12-08 17:41:24,125 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:24,129 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 9
+2024-12-08 17:41:24,155 INFO    wandb-upload_5:413989 [upload_job.py:push():131] Uploaded file /tmp/tmpx8yhpa6mwandb/l5yydvd6-media/images/confusion_matrix_0_137f8499ea663781a02a.png
+2024-12-08 17:41:24,180 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/config.yaml
+2024-12-08 17:41:24,181 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/wandb-summary.json
+2024-12-08 17:41:24,181 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/output.log
+2024-12-08 17:41:24,181 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/media/images/feature_importance_0_103d5d9384e948d453c7.png
+2024-12-08 17:41:24,182 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/media/images/confusion_matrix_0_137f8499ea663781a02a.png
+2024-12-08 17:41:24,182 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/media/images
+2024-12-08 17:41:24,182 INFO    Thread-12 :413989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/media
+2024-12-08 17:41:24,499 INFO    wandb-upload_3:413989 [upload_job.py:push():131] Uploaded file /tmp/tmpx8yhpa6mwandb/duinymgs-media/images/feature_importance_0_103d5d9384e948d453c7.png
+2024-12-08 17:41:24,540 INFO    wandb-upload_2:413989 [upload_job.py:push():131] Uploaded file /tmp/tmpx8yhpa6mwandb/tobq8atw-media/images/confusion_matrix_0_137f8499ea663781a02a.png
+2024-12-08 17:41:24,703 INFO    wandb-upload_1:413989 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmplzty86_8
+2024-12-08 17:41:24,719 INFO    wandb-upload_5:413989 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmpv_1s9kq1
+2024-12-08 17:41:24,728 INFO    wandb-upload_0:413989 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmpsjybu6iz
+2024-12-08 17:41:24,885 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-08 17:41:25,372 INFO    SenderThread:413989 [sender.py:send_artifact():1443] sent artifact job-git_github.com_udacity_nd0821-c2-build-model-workflow-exerc..-and-deploy_exercises_exercise_14_solution_random_forest_run.py - {'id': 'QXJ0aWZhY3Q6MTM2NDIwMjE3Mw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUwMjA0Mzg3Mw==', 'latestArtifact': None}}
+2024-12-08 17:41:25,373 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:25,373 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-12-08 17:41:25,373 INFO    SenderThread:413989 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-12-08 17:41:26,184 INFO    SenderThread:413989 [dir_watcher.py:finish():388] scan: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files
+2024-12-08 17:41:26,184 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/output.log output.log
+2024-12-08 17:41:26,185 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/diff.patch diff.patch
+2024-12-08 17:41:26,185 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/requirements.txt requirements.txt
+2024-12-08 17:41:26,185 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/wandb-metadata.json wandb-metadata.json
+2024-12-08 17:41:26,186 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/conda-environment.yaml conda-environment.yaml
+2024-12-08 17:41:26,190 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/wandb-summary.json wandb-summary.json
+2024-12-08 17:41:26,190 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/config.yaml config.yaml
+2024-12-08 17:41:26,204 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/code/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/run.py code/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/run.py
+2024-12-08 17:41:26,204 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/media/images/feature_importance_0_103d5d9384e948d453c7.png media/images/feature_importance_0_103d5d9384e948d453c7.png
+2024-12-08 17:41:26,204 INFO    SenderThread:413989 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/media/images/confusion_matrix_0_137f8499ea663781a02a.png media/images/confusion_matrix_0_137f8499ea663781a02a.png
+2024-12-08 17:41:26,204 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 10
+2024-12-08 17:41:26,205 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: poll_exit
+2024-12-08 17:41:26,205 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:26,205 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 10
+2024-12-08 17:41:26,206 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:26,206 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-12-08 17:41:26,206 INFO    SenderThread:413989 [file_pusher.py:finish():172] shutting down file pusher
+2024-12-08 17:41:26,411 INFO    wandb-upload_4:413989 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/output.log
+2024-12-08 17:41:26,415 INFO    wandb-upload_1:413989 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/conda-environment.yaml
+2024-12-08 17:41:26,416 INFO    wandb-upload_2:413989 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/requirements.txt
+2024-12-08 17:41:26,460 INFO    wandb-upload_5:413989 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/wandb-summary.json
+2024-12-08 17:41:26,462 INFO    wandb-upload_0:413989 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/files/config.yaml
+2024-12-08 17:41:26,662 INFO    Thread-11 (_thread_body):413989 [sender.py:transition_state():613] send defer: 11
+2024-12-08 17:41:26,663 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:26,663 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 11
+2024-12-08 17:41:26,664 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:26,664 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-12-08 17:41:26,664 INFO    SenderThread:413989 [file_pusher.py:join():178] waiting for file pusher
+2024-12-08 17:41:26,665 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 12
+2024-12-08 17:41:26,666 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:26,666 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 12
+2024-12-08 17:41:26,666 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:26,666 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-12-08 17:41:26,666 INFO    SenderThread:413989 [file_stream.py:finish():595] file stream finish called
+2024-12-08 17:41:26,760 INFO    SenderThread:413989 [file_stream.py:finish():599] file stream finish is done
+2024-12-08 17:41:26,760 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 13
+2024-12-08 17:41:26,761 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:26,761 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 13
+2024-12-08 17:41:26,761 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:26,762 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-12-08 17:41:26,762 INFO    SenderThread:413989 [sender.py:transition_state():613] send defer: 14
+2024-12-08 17:41:26,762 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 17:41:26,762 INFO    HandlerThread:413989 [handler.py:handle_request_defer():172] handle defer: 14
+2024-12-08 17:41:26,763 DEBUG   SenderThread:413989 [sender.py:send():378] send: final
+2024-12-08 17:41:26,763 DEBUG   SenderThread:413989 [sender.py:send():378] send: footer
+2024-12-08 17:41:26,763 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: defer
+2024-12-08 17:41:26,763 INFO    SenderThread:413989 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-12-08 17:41:26,764 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-08 17:41:26,765 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: poll_exit
+2024-12-08 17:41:26,766 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-08 17:41:26,766 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: poll_exit
+2024-12-08 17:41:26,767 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: server_info
+2024-12-08 17:41:26,768 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: server_info
+2024-12-08 17:41:26,771 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: get_summary
+2024-12-08 17:41:26,772 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: sampled_history
+2024-12-08 17:41:26,773 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-08 17:41:26,774 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: job_info
+2024-12-08 17:41:26,828 DEBUG   SenderThread:413989 [sender.py:send_request():405] send_request: job_info
+2024-12-08 17:41:26,828 INFO    MainThread:413989 [wandb_run.py:_footer_history_summary_info():3851] rendering history
+2024-12-08 17:41:26,828 INFO    MainThread:413989 [wandb_run.py:_footer_history_summary_info():3883] rendering summary
+2024-12-08 17:41:26,829 INFO    MainThread:413989 [wandb_run.py:_footer_sync_info():3810] logging synced files
+2024-12-08 17:41:26,829 DEBUG   HandlerThread:413989 [handler.py:handle_request():146] handle_request: shutdown
+2024-12-08 17:41:26,829 INFO    HandlerThread:413989 [handler.py:finish():869] shutting down handler
+2024-12-08 17:41:27,774 INFO    WriterThread:413989 [datastore.py:close():296] close: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/wandb/run-20241208_174105-rlkebsqr/run-rlkebsqr.wandb
+2024-12-08 17:41:27,828 INFO    SenderThread:413989 [sender.py:finish():1521] shutting down sender
+2024-12-08 17:41:27,828 INFO    SenderThread:413989 [file_pusher.py:finish():172] shutting down file pusher
+2024-12-08 17:41:27,828 INFO    SenderThread:413989 [file_pusher.py:join():178] waiting for file pusher

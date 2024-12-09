@@ -1,0 +1,25 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    code_path: code/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/preprocess/run.py
+    python_version: 3.10.16
+    cli_version: 0.16.4
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1733605221.0
+    t:
+      1:
+      - 55
+      - 105
+      2:
+      - 55
+      - 105
+      3:
+      - 23
+      4: 3.10.16
+      5: 0.16.4
+      8:
+      - 5
+      13: linux-x86_64

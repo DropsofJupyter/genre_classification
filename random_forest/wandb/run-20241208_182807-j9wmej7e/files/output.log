@@ -1,0 +1,11 @@
+2024-12-08 18:28:09,707 Downloading and reading train artifact
+2024-12-08 18:28:10,727 Extracting target from dataframe
+2024-12-08 18:28:10,728 Splitting train/val
+2024-12-08 18:28:10,744 Setting up pipeline
+2024-12-08 18:28:10,747 Fitting
+2024-12-08 18:28:19,199 Scoring
+/home/jesse/anaconda3/envs/mlflow-0e5e99aeffae40732585fbd4b1effb2f05be914e/lib/python3.10/site-packages/mlflow/models/signature.py:212: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  inputs = _infer_schema(model_input) if model_input is not None else None
+/home/jesse/anaconda3/envs/mlflow-0e5e99aeffae40732585fbd4b1effb2f05be914e/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+[34m[1mwandb[39m[22m: Adding directory to artifact (/tmp/tmpomdgovj2/model_export)... Done. 0.0s

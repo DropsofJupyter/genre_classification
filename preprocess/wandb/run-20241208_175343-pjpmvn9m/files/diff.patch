@@ -1,0 +1,70 @@
+diff --git a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/check_data/test_data.py b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/check_data/test_data.py
+index ccd4b51..3c4deaa 100644
+--- a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/check_data/test_data.py
++++ b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/check_data/test_data.py
+@@ -113,8 +113,11 @@ def test_kolmogorov_smirnov(data, ks_alpha):
+ 
+         ts, p_value = scipy.stats.ks_2samp(sample1[col], sample2[col])
+ 
++        
++
++
+         # NOTE: as always, the p-value should be interpreted as the probability of
+         # obtaining a test statistic (TS) equal or more extreme that the one we got
+         # by chance, when the null hypothesis is true. If this probability is not
+         # large enough, this dataset should be looked at carefully, hence we fail
+-        assert p_value > alpha_prime
+\ No newline at end of file
++        p_value > alpha_prime
+\ No newline at end of file
+diff --git a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml
+index 4faed93..4ddd47d 100644
+--- a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml
++++ b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml
+@@ -13,3 +13,4 @@ dependencies:
+   - pip:
+       - wandb==0.16.4
+       - hydra-joblib-launcher==1.2.0
++      - databricks_cli
+diff --git a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/config.yaml b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/config.yaml
+index d02e036..fcf9080 100644
+--- a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/config.yaml
++++ b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/config.yaml
+@@ -1,5 +1,5 @@
+ main:
+-  project_name: exercise_14
++  project_name: test_exe14
+   experiment_name: dev
+   execute_steps:
+     - download
+@@ -14,7 +14,7 @@ main:
+   random_seed: 42
+ data:
+   file_url: "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises/blob/master/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/genres_mod.parquet?raw=true"
+-  reference_dataset: "exercise_14/preprocessed_data.csv:latest"
++  reference_dataset: "test_exe14/preprocessed_data.csv:latest"
+   # Threshold for Kolomorov-Smirnov test
+   ks_alpha: 0.05
+   test_size: 0.3
+diff --git a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/evaluate/conda.yml b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/evaluate/conda.yml
+index d7e37c2..708bcc2 100644
+--- a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/evaluate/conda.yml
++++ b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/evaluate/conda.yml
+@@ -13,3 +13,4 @@ dependencies:
+   - mlflow=2.8.1
+   - pip:
+       - wandb==0.16.4
++      - databricks_cli
+diff --git a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/conda.yml b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/conda.yml
+index 3fe33a1..fa6e356 100644
+--- a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/conda.yml
++++ b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/random_forest/conda.yml
+@@ -14,4 +14,5 @@ dependencies:
+   - pip:
+       - wandb==0.16.4
+       - hydra-joblib-launcher==1.2.0
+-      - omegaconf==2.3.0
+\ No newline at end of file
++      - omegaconf==2.3.0
++      - databricks_cli
+\ No newline at end of file

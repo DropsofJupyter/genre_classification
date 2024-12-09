@@ -1,0 +1,36 @@
+2024-12-08 18:22:29,080 Downloading and reading artifact
+2024-12-08 18:22:30,031 Splitting data into train, val and test
+2024-12-08 18:22:30,051 Uploading the train dataset to data_train.csv
+2024-12-08 18:22:30,255 Logging artifact
+Traceback (most recent call last):
+  File "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/segregate/run.py", line 122, in <module>
+    go(args)
+  File "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/segregate/run.py", line 62, in go
+    run.log_artifact(artifact)
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 371, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2883, in log_artifact
+    return self._log_artifact(
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3022, in _log_artifact
+    self._assert_can_log_artifact(artifact)
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3079, in _assert_can_log_artifact
+    raise ValueError(
+ValueError: Artifact data_train.csv already exists with type 'raw_data'; cannot create another with type 'segregated_data'
+Traceback (most recent call last):
+  File "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/segregate/run.py", line 122, in <module>
+    go(args)
+  File "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/segregate/run.py", line 62, in go
+    run.log_artifact(artifact)
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 371, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2883, in log_artifact
+    return self._log_artifact(
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3022, in _log_artifact
+    self._assert_can_log_artifact(artifact)
+  File "/home/jesse/anaconda3/envs/mlflow-f9ba271db3d11ecbef8779ccec5d3db3d87fa2a0/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3079, in _assert_can_log_artifact
+    raise ValueError(
+ValueError: Artifact data_train.csv already exists with type 'raw_data'; cannot create another with type 'segregated_data'

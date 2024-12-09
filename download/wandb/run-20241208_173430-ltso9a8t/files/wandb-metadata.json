@@ -1,0 +1,89 @@
+{
+    "os": "Linux-6.8.0-49-generic-x86_64-with-glibc2.35",
+    "python": "3.10.16",
+    "heartbeatAt": "2024-12-09T01:34:31.558689",
+    "startedAt": "2024-12-09T01:34:30.905994",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises/blob/master/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/genres_mod.parquet?raw=true",
+        "--artifact_name",
+        "raw_data.parquet",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "Data as downloaded"
+    ],
+    "state": "running",
+    "program": "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/download_data.py",
+    "codePathLocal": "download_data.py",
+    "codePath": "lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/download_data.py",
+    "git": {
+        "remote": "git@github.com:udacity/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "0d72086a9301bf656d4656f49cc342b126b71048"
+    },
+    "email": "jqtomorrow@Gmail.com",
+    "root": "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises",
+    "host": "jesse",
+    "username": "jesse",
+    "executable": "/home/jesse/anaconda3/envs/mlflow-e190ff1f176d660e6839ac34c7d6bc74393e2ccd/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1066.647375,
+        "min": 400.0,
+        "max": 4700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 702.029,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1295.484,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 437.19,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1189.855,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1400.014,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 841.904,
+            "min": 400.0,
+            "max": 4700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 233.17998886108398,
+            "used": 82.00246810913086
+        }
+    },
+    "memory": {
+        "total": 15.348331451416016
+    }
+}

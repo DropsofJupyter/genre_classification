@@ -1,0 +1,35 @@
+diff --git a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/check_data/test_data.py b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/check_data/test_data.py
+index ccd4b51..de105d1 100644
+--- a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/check_data/test_data.py
++++ b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/check_data/test_data.py
+@@ -113,6 +113,10 @@ def test_kolmogorov_smirnov(data, ks_alpha):
+ 
+         ts, p_value = scipy.stats.ks_2samp(sample1[col], sample2[col])
+ 
++        are_identical = sample1.equals(sample2)
++        print("Datasets are identical:", are_identical)
++
++
+         # NOTE: as always, the p-value should be interpreted as the probability of
+         # obtaining a test statistic (TS) equal or more extreme that the one we got
+         # by chance, when the null hypothesis is true. If this probability is not
+diff --git a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml
+index 4faed93..4ddd47d 100644
+--- a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml
++++ b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml
+@@ -13,3 +13,4 @@ dependencies:
+   - pip:
+       - wandb==0.16.4
+       - hydra-joblib-launcher==1.2.0
++      - databricks_cli
+diff --git a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/config.yaml b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/config.yaml
+index d02e036..56cedf2 100644
+--- a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/config.yaml
++++ b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/config.yaml
+@@ -1,5 +1,5 @@
+ main:
+-  project_name: exercise_14
++  project_name: test_exe14
+   experiment_name: dev
+   execute_steps:
+     - download

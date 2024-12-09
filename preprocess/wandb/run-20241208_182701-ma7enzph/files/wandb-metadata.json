@@ -1,0 +1,89 @@
+{
+    "os": "Linux-6.8.0-49-generic-x86_64-with-glibc2.35",
+    "python": "3.10.16",
+    "heartbeatAt": "2024-12-09T02:27:02.112468",
+    "startedAt": "2024-12-09T02:27:01.664165",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "raw_data.parquet:latest",
+        "--artifact_name",
+        "preprocessed_data.csv",
+        "--artifact_type",
+        "preprocessed_data",
+        "--artifact_description",
+        "Data with preprocessing applied"
+    ],
+    "state": "running",
+    "program": "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/run.py",
+    "codePathLocal": "run.py",
+    "codePath": "preprocess/run.py",
+    "git": {
+        "remote": "git@github.com:DropsofJupyter/genre_classification.git",
+        "commit": "6c6ec1e27d2c891a769a13db3ba4fec4e3f8529d"
+    },
+    "email": "jqtomorrow@Gmail.com",
+    "root": "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification",
+    "host": "jesse",
+    "username": "jesse",
+    "executable": "/home/jesse/anaconda3/envs/mlflow-b662b891138f514f86ea83df6f384dc4f23b43c1/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3445.9835000000003,
+        "min": 400.0,
+        "max": 4700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4099.952,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 759.568,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3450.429,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4107.055,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4040.793,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 3265.071,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 4100.041,
+            "min": 400.0,
+            "max": 4700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 233.17998886108398,
+            "used": 83.0736198425293
+        }
+    },
+    "memory": {
+        "total": 15.348331451416016
+    }
+}

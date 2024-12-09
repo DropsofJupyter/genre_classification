@@ -1,0 +1,9 @@
+diff --git a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml
+index 4faed93..4ddd47d 100644
+--- a/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml
++++ b/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/conda.yml
+@@ -13,3 +13,4 @@ dependencies:
+   - pip:
+       - wandb==0.16.4
+       - hydra-joblib-launcher==1.2.0
++      - databricks_cli

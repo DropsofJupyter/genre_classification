@@ -1,0 +1,209 @@
+2024-12-08 18:24:29,540 INFO    StreamThr :418736 [internal.py:wandb_internal():86] W&B internal server running at pid: 418736, started at: 2024-12-08 18:24:29.539456
+2024-12-08 18:24:29,542 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: status
+2024-12-08 18:24:29,544 INFO    WriterThread:418736 [datastore.py:open_for_write():87] open: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/run-jx2czwtu.wandb
+2024-12-08 18:24:29,546 DEBUG   SenderThread:418736 [sender.py:send():378] send: header
+2024-12-08 18:24:29,547 DEBUG   SenderThread:418736 [sender.py:send():378] send: run
+2024-12-08 18:24:29,922 INFO    SenderThread:418736 [dir_watcher.py:__init__():211] watching files in: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files
+2024-12-08 18:24:29,923 INFO    SenderThread:418736 [sender.py:_start_run_threads():1099] run started: jx2czwtu with start time 1733711069.538886
+2024-12-08 18:24:29,934 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: check_version
+2024-12-08 18:24:29,934 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: check_version
+2024-12-08 18:24:30,105 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: run_start
+2024-12-08 18:24:30,107 DEBUG   HandlerThread:418736 [system_info.py:__init__():26] System info init
+2024-12-08 18:24:30,107 DEBUG   HandlerThread:418736 [system_info.py:__init__():41] System info init done
+2024-12-08 18:24:30,107 INFO    HandlerThread:418736 [system_monitor.py:start():194] Starting system monitor
+2024-12-08 18:24:30,107 INFO    SystemMonitor:418736 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-12-08 18:24:30,108 INFO    HandlerThread:418736 [system_monitor.py:probe():214] Collecting system info
+2024-12-08 18:24:30,109 INFO    SystemMonitor:418736 [interfaces.py:start():190] Started cpu monitoring
+2024-12-08 18:24:30,111 INFO    SystemMonitor:418736 [interfaces.py:start():190] Started disk monitoring
+2024-12-08 18:24:30,112 INFO    SystemMonitor:418736 [interfaces.py:start():190] Started memory monitoring
+2024-12-08 18:24:30,114 INFO    SystemMonitor:418736 [interfaces.py:start():190] Started network monitoring
+2024-12-08 18:24:30,120 DEBUG   HandlerThread:418736 [system_info.py:probe():150] Probing system
+2024-12-08 18:24:30,121 DEBUG   HandlerThread:418736 [system_info.py:_probe_git():135] Probing git
+2024-12-08 18:24:30,124 DEBUG   HandlerThread:418736 [system_info.py:_probe_git():143] Probing git done
+2024-12-08 18:24:30,124 DEBUG   HandlerThread:418736 [system_info.py:probe():198] Probing system done
+2024-12-08 18:24:30,124 DEBUG   HandlerThread:418736 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-49-generic-x86_64-with-glibc2.35', 'python': '3.10.16', 'heartbeatAt': '2024-12-09T02:24:30.120146', 'startedAt': '2024-12-09T02:24:29.531863', 'docker': None, 'cuda': None, 'args': ('--input_artifact', 'raw_data.parquet:latest', '--artifact_name', 'preprocessed_data.csv', '--artifact_type', 'preprocessed_data', '--artifact_description', 'Data with preprocessing applied'), 'state': 'running', 'program': '/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/run.py', 'codePathLocal': 'run.py', 'codePath': 'preprocess/run.py', 'git': {'remote': 'git@github.com:DropsofJupyter/genre_classification.git', 'commit': '6c6ec1e27d2c891a769a13db3ba4fec4e3f8529d'}, 'email': 'jqtomorrow@Gmail.com', 'root': '/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification', 'host': 'jesse', 'username': 'jesse', 'executable': '/home/jesse/anaconda3/envs/mlflow-b662b891138f514f86ea83df6f384dc4f23b43c1/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1094.150625, 'min': 400.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 1399.976, 'min': 400.0, 'max': 4700.0}, {'current': 1400.0, 'min': 400.0, 'max': 4700.0}, {'current': 400.0, 'min': 400.0, 'max': 4700.0}, {'current': 400.0, 'min': 400.0, 'max': 4700.0}, {'current': 400.0, 'min': 400.0, 'max': 4700.0}, {'current': 1234.294, 'min': 400.0, 'max': 4700.0}, {'current': 589.855, 'min': 400.0, 'max': 4700.0}, {'current': 492.151, 'min': 400.0, 'max': 4700.0}], 'disk': {'/': {'total': 233.17998886108398, 'used': 82.92634201049805}}, 'memory': {'total': 15.348331451416016}}
+2024-12-08 18:24:30,124 INFO    HandlerThread:418736 [system_monitor.py:probe():224] Finished collecting system info
+2024-12-08 18:24:30,124 INFO    HandlerThread:418736 [system_monitor.py:probe():227] Publishing system info
+2024-12-08 18:24:30,124 DEBUG   HandlerThread:418736 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-12-08 18:24:30,647 DEBUG   HandlerThread:418736 [system_info.py:_save_conda():219] Saving conda packages done
+2024-12-08 18:24:30,647 DEBUG   HandlerThread:418736 [system_info.py:_save_code():44] Saving code
+2024-12-08 18:24:30,649 DEBUG   HandlerThread:418736 [system_info.py:_save_code():65] Saving code done
+2024-12-08 18:24:30,649 DEBUG   HandlerThread:418736 [system_info.py:_save_patches():82] Saving git patches
+2024-12-08 18:24:30,769 DEBUG   HandlerThread:418736 [system_info.py:_save_patches():124] Saving git patches done
+2024-12-08 18:24:30,769 INFO    HandlerThread:418736 [system_monitor.py:probe():229] Finished publishing system info
+2024-12-08 18:24:30,770 DEBUG   SenderThread:418736 [sender.py:send():378] send: files
+2024-12-08 18:24:30,770 INFO    SenderThread:418736 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-12-08 18:24:30,770 INFO    SenderThread:418736 [sender.py:_save_file():1365] saving file code/preprocess/run.py with policy now
+2024-12-08 18:24:30,791 INFO    SenderThread:418736 [sender.py:_save_file():1365] saving file diff.patch with policy now
+2024-12-08 18:24:30,903 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: python_packages
+2024-12-08 18:24:30,903 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: python_packages
+2024-12-08 18:24:30,903 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-08 18:24:30,904 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: stop_status
+2024-12-08 18:24:30,905 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-08 18:24:30,925 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/conda-environment.yaml
+2024-12-08 18:24:30,925 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/code/preprocess/run.py
+2024-12-08 18:24:30,925 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/wandb-metadata.json
+2024-12-08 18:24:30,925 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/requirements.txt
+2024-12-08 18:24:30,925 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/diff.patch
+2024-12-08 18:24:30,925 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/code
+2024-12-08 18:24:30,925 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/code/preprocess
+2024-12-08 18:24:31,017 DEBUG   SenderThread:418736 [sender.py:send():378] send: telemetry
+2024-12-08 18:24:31,107 INFO    wandb-upload_0:418736 [upload_job.py:push():131] Uploaded file /tmp/tmp1mcu9jx9wandb/3vsog8x1-wandb-metadata.json
+2024-12-08 18:24:31,147 INFO    wandb-upload_1:418736 [upload_job.py:push():131] Uploaded file /tmp/tmp1mcu9jx9wandb/bue9scez-code/preprocess/run.py
+2024-12-08 18:24:31,425 DEBUG   SenderThread:418736 [sender.py:send():378] send: use_artifact
+2024-12-08 18:24:31,924 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/output.log
+2024-12-08 18:24:32,273 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: log_artifact
+2024-12-08 18:24:32,273 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: log_artifact
+2024-12-08 18:24:32,689 INFO    SenderThread:418736 [sender.py:send_request_log_artifact():1431] logged artifact preprocessed_data.csv - {'id': 'QXJ0aWZhY3Q6MTM2NDE1OTQ0MA==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUwMjAzMTkyNw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTM2NDE1OTQ0MA==', 'versionIndex': 0}}}
+2024-12-08 18:24:32,689 DEBUG   SenderThread:418736 [sender.py:send():378] send: exit
+2024-12-08 18:24:32,689 INFO    SenderThread:418736 [sender.py:send_exit():585] handling exit code: 0
+2024-12-08 18:24:32,689 INFO    SenderThread:418736 [sender.py:send_exit():587] handling runtime: 2
+2024-12-08 18:24:32,692 INFO    SenderThread:418736 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-12-08 18:24:32,692 INFO    SenderThread:418736 [sender.py:send_exit():593] send defer
+2024-12-08 18:24:32,692 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:32,692 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 0
+2024-12-08 18:24:32,693 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:32,693 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-12-08 18:24:32,693 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 1
+2024-12-08 18:24:32,693 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:32,693 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 1
+2024-12-08 18:24:32,693 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:32,694 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-12-08 18:24:32,694 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 2
+2024-12-08 18:24:32,694 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:32,694 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 2
+2024-12-08 18:24:32,694 INFO    HandlerThread:418736 [system_monitor.py:finish():203] Stopping system monitor
+2024-12-08 18:24:32,694 DEBUG   SystemMonitor:418736 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-12-08 18:24:32,695 DEBUG   SystemMonitor:418736 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-12-08 18:24:32,695 INFO    HandlerThread:418736 [interfaces.py:finish():202] Joined cpu monitor
+2024-12-08 18:24:32,695 DEBUG   SystemMonitor:418736 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-12-08 18:24:32,695 INFO    HandlerThread:418736 [interfaces.py:finish():202] Joined disk monitor
+2024-12-08 18:24:32,696 INFO    HandlerThread:418736 [interfaces.py:finish():202] Joined memory monitor
+2024-12-08 18:24:32,696 INFO    HandlerThread:418736 [interfaces.py:finish():202] Joined network monitor
+2024-12-08 18:24:32,697 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:32,697 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-12-08 18:24:32,697 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 3
+2024-12-08 18:24:32,697 DEBUG   SenderThread:418736 [sender.py:send():378] send: stats
+2024-12-08 18:24:32,697 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:32,697 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 3
+2024-12-08 18:24:32,698 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:32,698 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-12-08 18:24:32,698 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 4
+2024-12-08 18:24:32,698 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:32,698 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 4
+2024-12-08 18:24:32,698 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:32,698 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-12-08 18:24:32,698 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 5
+2024-12-08 18:24:32,699 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:32,699 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 5
+2024-12-08 18:24:32,699 DEBUG   SenderThread:418736 [sender.py:send():378] send: summary
+2024-12-08 18:24:32,699 INFO    SenderThread:418736 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-12-08 18:24:32,700 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:32,700 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-12-08 18:24:32,700 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 6
+2024-12-08 18:24:32,700 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:32,700 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 6
+2024-12-08 18:24:32,701 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:32,701 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-12-08 18:24:32,705 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: status_report
+2024-12-08 18:24:32,846 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 7
+2024-12-08 18:24:32,846 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:32,846 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 7
+2024-12-08 18:24:32,847 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:32,847 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-12-08 18:24:32,924 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/config.yaml
+2024-12-08 18:24:32,925 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/wandb-summary.json
+2024-12-08 18:24:33,023 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 8
+2024-12-08 18:24:33,023 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:33,023 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 8
+2024-12-08 18:24:33,024 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:33,024 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-12-08 18:24:33,024 INFO    SenderThread:418736 [job_builder.py:build():298] Attempting to build job artifact
+2024-12-08 18:24:33,024 INFO    SenderThread:418736 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-12-08 18:24:33,028 INFO    SenderThread:418736 [job_builder.py:build():404] adding wandb-job metadata file
+2024-12-08 18:24:33,100 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 9
+2024-12-08 18:24:33,100 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:33,100 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 9
+2024-12-08 18:24:33,100 DEBUG   SenderThread:418736 [sender.py:send():378] send: artifact
+2024-12-08 18:24:33,281 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-08 18:24:33,630 INFO    wandb-upload_1:418736 [upload_job.py:push():86] Skipped uploading /home/jesse/.local/share/wandb/artifacts/staging/tmpaba1jfnf
+2024-12-08 18:24:33,631 INFO    wandb-upload_0:418736 [upload_job.py:push():86] Skipped uploading /home/jesse/.local/share/wandb/artifacts/staging/tmp6jc3n8ok
+2024-12-08 18:24:33,925 INFO    Thread-12 :418736 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/output.log
+2024-12-08 18:24:38,284 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: keepalive
+2024-12-08 18:24:40,153 INFO    wandb-upload_2:418736 [upload_job.py:push():131] Uploaded file /tmp/tmp1mcu9jx9wandb/lif9ioll-diff.patch
+2024-12-08 18:24:43,286 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: keepalive
+2024-12-08 18:24:48,288 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: keepalive
+2024-12-08 18:24:49,380 INFO    wandb-upload_1:418736 [upload_job.py:push():89] Uploaded file /home/jesse/.local/share/wandb/artifacts/staging/tmp8w6apsgu
+2024-12-08 18:24:50,125 INFO    SenderThread:418736 [sender.py:send_artifact():1443] sent artifact job-git_github.com_DropsofJupyter_genre_classification.git_preprocess_run.py - {'id': 'QXJ0aWZhY3Q6MTM2NDIyNjgxMw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUwMjAzMTkzOQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTM2NDIyNTQwMA==', 'versionIndex': 10}}}
+2024-12-08 18:24:50,126 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:50,126 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-12-08 18:24:50,126 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: status_report
+2024-12-08 18:24:50,126 INFO    SenderThread:418736 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-12-08 18:24:50,930 INFO    SenderThread:418736 [dir_watcher.py:finish():388] scan: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files
+2024-12-08 18:24:50,930 INFO    SenderThread:418736 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/output.log output.log
+2024-12-08 18:24:50,931 INFO    SenderThread:418736 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/diff.patch diff.patch
+2024-12-08 18:24:50,966 INFO    SenderThread:418736 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/requirements.txt requirements.txt
+2024-12-08 18:24:50,966 INFO    SenderThread:418736 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/wandb-metadata.json wandb-metadata.json
+2024-12-08 18:24:50,966 INFO    SenderThread:418736 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/conda-environment.yaml conda-environment.yaml
+2024-12-08 18:24:50,966 INFO    SenderThread:418736 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/wandb-summary.json wandb-summary.json
+2024-12-08 18:24:50,966 INFO    SenderThread:418736 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/config.yaml config.yaml
+2024-12-08 18:24:50,977 INFO    SenderThread:418736 [dir_watcher.py:finish():402] scan save: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/code/preprocess/run.py code/preprocess/run.py
+2024-12-08 18:24:50,977 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 10
+2024-12-08 18:24:50,978 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: poll_exit
+2024-12-08 18:24:50,978 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:50,978 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 10
+2024-12-08 18:24:50,979 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:50,979 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-12-08 18:24:50,979 INFO    SenderThread:418736 [file_pusher.py:finish():172] shutting down file pusher
+2024-12-08 18:24:51,153 INFO    wandb-upload_2:418736 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/output.log
+2024-12-08 18:24:51,187 INFO    wandb-upload_1:418736 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/conda-environment.yaml
+2024-12-08 18:24:51,236 INFO    wandb-upload_3:418736 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/requirements.txt
+2024-12-08 18:24:51,240 INFO    wandb-upload_0:418736 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/wandb-summary.json
+2024-12-08 18:24:51,248 INFO    wandb-upload_4:418736 [upload_job.py:push():131] Uploaded file /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/files/config.yaml
+2024-12-08 18:24:51,290 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-08 18:24:51,291 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: poll_exit
+2024-12-08 18:24:51,448 INFO    Thread-11 (_thread_body):418736 [sender.py:transition_state():613] send defer: 11
+2024-12-08 18:24:51,449 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:51,449 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 11
+2024-12-08 18:24:51,450 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:51,450 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-12-08 18:24:51,450 INFO    SenderThread:418736 [file_pusher.py:join():178] waiting for file pusher
+2024-12-08 18:24:51,450 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 12
+2024-12-08 18:24:51,451 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:51,451 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 12
+2024-12-08 18:24:51,451 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:51,451 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-12-08 18:24:51,451 INFO    SenderThread:418736 [file_stream.py:finish():595] file stream finish called
+2024-12-08 18:24:51,546 INFO    SenderThread:418736 [file_stream.py:finish():599] file stream finish is done
+2024-12-08 18:24:51,547 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 13
+2024-12-08 18:24:51,547 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:51,547 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 13
+2024-12-08 18:24:51,548 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:51,548 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-12-08 18:24:51,548 INFO    SenderThread:418736 [sender.py:transition_state():613] send defer: 14
+2024-12-08 18:24:51,548 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: defer
+2024-12-08 18:24:51,549 INFO    HandlerThread:418736 [handler.py:handle_request_defer():172] handle defer: 14
+2024-12-08 18:24:51,549 DEBUG   SenderThread:418736 [sender.py:send():378] send: final
+2024-12-08 18:24:51,549 DEBUG   SenderThread:418736 [sender.py:send():378] send: footer
+2024-12-08 18:24:51,550 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: defer
+2024-12-08 18:24:51,550 INFO    SenderThread:418736 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-12-08 18:24:51,550 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-08 18:24:51,551 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: poll_exit
+2024-12-08 18:24:51,552 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-08 18:24:51,552 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: poll_exit
+2024-12-08 18:24:51,553 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: server_info
+2024-12-08 18:24:51,554 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: server_info
+2024-12-08 18:24:51,557 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: get_summary
+2024-12-08 18:24:51,558 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: sampled_history
+2024-12-08 18:24:51,558 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-08 18:24:51,559 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: job_info
+2024-12-08 18:24:51,623 DEBUG   SenderThread:418736 [sender.py:send_request():405] send_request: job_info
+2024-12-08 18:24:51,624 INFO    MainThread:418736 [wandb_run.py:_footer_history_summary_info():3851] rendering history
+2024-12-08 18:24:51,624 INFO    MainThread:418736 [wandb_run.py:_footer_history_summary_info():3883] rendering summary
+2024-12-08 18:24:51,624 INFO    MainThread:418736 [wandb_run.py:_footer_sync_info():3810] logging synced files
+2024-12-08 18:24:51,625 DEBUG   HandlerThread:418736 [handler.py:handle_request():146] handle_request: shutdown
+2024-12-08 18:24:51,625 INFO    HandlerThread:418736 [handler.py:finish():869] shutting down handler
+2024-12-08 18:24:52,560 INFO    WriterThread:418736 [datastore.py:close():296] close: /home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/genre_classification/preprocess/wandb/run-20241208_182429-jx2czwtu/run-jx2czwtu.wandb
+2024-12-08 18:24:52,624 INFO    SenderThread:418736 [sender.py:finish():1521] shutting down sender
+2024-12-08 18:24:52,624 INFO    SenderThread:418736 [file_pusher.py:finish():172] shutting down file pusher
+2024-12-08 18:24:52,624 INFO    SenderThread:418736 [file_pusher.py:join():178] waiting for file pusher

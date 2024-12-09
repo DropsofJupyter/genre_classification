@@ -1,0 +1,89 @@
+{
+    "os": "Linux-6.8.0-49-generic-x86_64-with-glibc2.35",
+    "python": "3.10.16",
+    "heartbeatAt": "2024-12-08T23:21:08.331975",
+    "startedAt": "2024-12-08T23:21:07.774316",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "raw_data.parquet:latest",
+        "--artifact_name",
+        "preprocessed_data.csv",
+        "--artifact_type",
+        "preprocessed_data",
+        "--artifact_description",
+        "Data with preprocessing applied"
+    ],
+    "state": "running",
+    "program": "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/preprocess/run.py",
+    "codePathLocal": "run.py",
+    "codePath": "lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/preprocess/run.py",
+    "git": {
+        "remote": "git@github.com:udacity/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "0d72086a9301bf656d4656f49cc342b126b71048"
+    },
+    "email": "jqtomorrow@Gmail.com",
+    "root": "/home/jesse/WGU/ML DevOps - D501/Udacity/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/test_repo/nd0821-c2-build-model-workflow-exercises",
+    "host": "jesse",
+    "username": "jesse",
+    "executable": "/home/jesse/anaconda3/envs/mlflow-b662b891138f514f86ea83df6f384dc4f23b43c1/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1800.015875,
+        "min": 400.0,
+        "max": 4700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1457.339,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1499.911,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 683.814,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 801.958,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 837.378,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1500.015,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1480.741,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1793.802,
+            "min": 400.0,
+            "max": 4700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 233.17998886108398,
+            "used": 80.55741882324219
+        }
+    },
+    "memory": {
+        "total": 15.348331451416016
+    }
+}
